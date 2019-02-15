@@ -85,4 +85,4 @@ module.exports = {
   removeSpaces,
   sumNumbers,
   sortByLastLetter,
-};
+}; 
