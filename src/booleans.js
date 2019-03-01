@@ -5,7 +5,7 @@ const negate = (a) => {
 };
 
 const both = (a, b) => {
-  return (a === true && b === true)
+  return a && b === true;
 };
 
 /*const both = (a, b) => {
@@ -14,7 +14,7 @@ const both = (a, b) => {
 */
 
 const either = (a, b) => {
-  return (a === true || b === true)
+  return a || b;
 };
 
 /*
@@ -24,7 +24,7 @@ const either = (a, b) => {
 */
 
 const none = (a, b) => {
-  return (a === !true && b === !true);
+  return !a && !b;
 };
 
 /*
@@ -52,10 +52,7 @@ const one = (a, b) => {
 */
 
 const truthiness = (a) => {
-  if (a) {
-    return true;
-  }
-  return false;
+  return a ? true : false;
 };
 
 /*
@@ -78,7 +75,7 @@ const isLessThanOrEqualTo = (a, b) => {
 };
 
 const isOdd = (a) => {
-  return a >= 0 && a % 2 > 0;
+  return (a % 2) === 1;
 };
 
 /*
@@ -88,7 +85,7 @@ const isOdd = (a) => {
 */
 
 const isEven = (a) => {
-  return a >= 0 && a % 2 === 0;
+  return (a % 2) === 0;
 };
 
 /*
@@ -98,7 +95,7 @@ const isEven = (a) => {
 */
 
 const isSquare = (a) => {
-  return a >= 0 && Math.sqrt(a) % 1 === 0;
+  return Math.sqrt(a) % 1 === 0;
 };
 
 /*
