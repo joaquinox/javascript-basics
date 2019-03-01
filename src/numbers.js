@@ -1,3 +1,5 @@
+//All answers are absolutely fine and passable, well done. Would possibly use the method of Math.pow(a, b) instead of ** as some operators aren't compatible with Internet Explorer, but either is fine in this case.
+
 const add = (a, b) => {
   return a + b;
 };
