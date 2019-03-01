@@ -1,5 +1,5 @@
 const createPerson = (name, age) => {
-  return { name: name, age: age };
+  return { name, age };
 };
 
 const getName = (object) => {
@@ -11,17 +11,11 @@ const getProperty = (property, object) => {
 };
 
 const hasProperty = (property, object) => {
-  if (object.hasOwnProperty(property)) {
-    return true;
-  }
-  return false;
+  return (object.hasOwnProperty(property) ? true : false);
 };
 
 const isOver65 = (person) => {
-  if (person.age > 65) {
-    return true;
-  }
-  return false;
+  return (person.age > 65 ? true : false);
 };
 
 const getAges = (people) => {
