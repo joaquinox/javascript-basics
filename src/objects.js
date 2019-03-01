@@ -1,5 +1,5 @@
 const createPerson = (name, age) => {
-  return { name: name, age: age };
+  return { name: name, age: age }; // nice one
 };
 
 const getName = (object) => {
@@ -38,7 +38,9 @@ const findHondas = (cars) => {
 
 const averageAge = (people) => {
   const ages = people.map(person => person.age);
-  const sum = ages.reduce((a, b) => b += a);
+  const sum = ages.reduce((a, b) => b += a); 
+  // awesome, elegant solution!
+  // you could have done it without the map if reducer kept track of the average so far instead of sum ;)
   return sum / ages.length;
 };
 
